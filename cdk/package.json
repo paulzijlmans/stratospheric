@@ -1,0 +1,15 @@
+{
+  "name": "stratospheric-cdk",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "repository:deploy": "cdk deploy --app \"./mvnw -e -q compile exec:java -Dexec.mainClass=dev.stratospheric.todoapp.cdk.DockerRepositoryApp\" --require-approval never",
+    "repository:destroy": "cdk destroy --app \"./mvnw -e -q compile exec:java -Dexec.mainClass=dev.stratospheric.todoapp.cdk.DockerRepositoryApp\" --force --require-approval never"
+  },
+  "devDependencies": {
+    "aws-cdk": "2.43.1"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

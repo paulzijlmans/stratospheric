@@ -1,4 +1,0 @@
-#!/bin/bash
-. ./.env
-echo "Removing App"
-cdk destroy -c accountId=$AWS_ACCOUNT_NUMBER -c region=$REGION

@@ -8,10 +8,11 @@
     <version>0.1</version>
 
     <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <cdk.version>2.46.0</cdk.version>
-        <constructs.version>10.1.120</constructs.version>
         <junit.version>5.9.0</junit.version>
+        <cdk-constructs.version>0.1.13</cdk-constructs.version>
     </properties>
 
     <build>
@@ -19,49 +20,23 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>3.0.0</version>
-                <configuration>
-                    <mainClass>com.myorg.CdkApp</mainClass>
-                </configuration>
+                <version>3.9.0</version>
             </plugin>
         </plugins>
     </build>
 
     <dependencies>
-        <!-- AWS Cloud Development Kit -->
-        <dependency>
-            <groupId>software.amazon.awscdk</groupId>
-            <artifactId>aws-cdk-lib</artifactId>
-            <version>${cdk.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>software.constructs</groupId>
-            <artifactId>constructs</artifactId>
-            <version>${constructs.version}</version>
-        </dependency>
-
         <dependency>
             <groupId>dev.stratospheric</groupId>
             <artifactId>cdk-constructs</artifactId>
-            <version>0.1.13</version>
+            <version>${cdk-constructs.version}</version>
         </dependency>
 
         <dependency>
-          <groupId>org.junit.jupiter</groupId>
-          <artifactId>junit-jupiter</artifactId>
-          <version>${junit.version}</version>
-          <scope>test</scope>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>
