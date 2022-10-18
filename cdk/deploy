@@ -1,0 +1,4 @@
+#!/bin/bash
+. ./.env
+echo "Deploying App"
+cdk deploy -c accountId=$AWS_ACCOUNT_NUMBER -c region=$REGION
