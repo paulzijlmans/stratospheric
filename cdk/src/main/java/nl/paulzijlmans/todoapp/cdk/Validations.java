@@ -1,4 +1,4 @@
-package com.myorg;
+package nl.paulzijlmans.todoapp.cdk;
 
 public class Validations {
 

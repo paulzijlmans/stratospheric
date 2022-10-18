@@ -1,4 +1,4 @@
-package com.myorg;
+package nl.paulzijlmans.todoapp.cdk;
 
 import dev.stratospheric.cdk.Network;
 import software.amazon.awscdk.App;
@@ -6,7 +6,7 @@ import software.amazon.awscdk.Environment;
 import software.amazon.awscdk.Stack;
 import software.amazon.awscdk.StackProps;
 
-import static com.myorg.Validations.requireNonEmpty;
+import static nl.paulzijlmans.todoapp.cdk.Validations.requireNonEmpty;
 
 public class NetworkApp {
 
