@@ -11,4 +11,4 @@ target
 .cdk.staging
 cdk.out
 
-.env
+node_modules
